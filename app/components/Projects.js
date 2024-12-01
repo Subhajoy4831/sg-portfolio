@@ -61,7 +61,7 @@ const otherProjects = [
           exit={{ opacity: 0, y: -20 }}
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.3 }}
-          className="relative grid grid-cols-1 md:grid-cols-2 bg-[#0B1224] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl"
+          className="relative grid grid-cols-1 md:grid-cols-2 bg-[#0B1224] rounded-lg overflow-hidden shadow-lg hover:shadow-2xl cursor-pointer"
         >
           <div className="relative h-[300px] md:h-auto">
             <Image
@@ -90,7 +90,7 @@ const otherProjects = [
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
-                className="text-gray-400 hover:text-white transition duration-300"
+                className="text-gray-400 hover:text-blue-300 transition duration-300"
               >
                 <Github size={24} />
               </motion.a>
@@ -99,7 +99,7 @@ const otherProjects = [
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
-                className="text-gray-400 hover:text-white transition duration-300"
+                className="text-gray-400 hover:text-blue-300 transition duration-300"
               >
                 <ExternalLink size={24} />
               </motion.a>
@@ -125,7 +125,7 @@ const otherProjects = [
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.1 }}
-            className="text-gray-300 hover:text-blue-400 transition duration-300"
+            className="text-gray-400 hover:text-blue-300 transition duration-300"
           >
             <Github size={24} />
           </motion.a>
@@ -135,7 +135,7 @@ const otherProjects = [
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1 }}
-                className="text-gray-400 hover:text-white transition duration-300"
+                className="text-gray-400 hover:text-blue-300 transition duration-300"
             >
                 <ExternalLink size={24} />
             </motion.a>
@@ -160,7 +160,18 @@ const otherProjects = [
     return (
         <section id="projects" className="py-20 bg-[#020C1B]">
           <div className="container mx-auto px-6">
-            <h2 className="text-4xl font-bold text-center mb-12 text-blue-400">My Projects</h2>
+          <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="mb-12"
+        >
+          <h2 className="flex items-center gap-2 text-4xl font-bold mb-8">
+            <span className="text-blue-400 font-mono text-sm">03.</span>
+            <span className="text-gray-200">My Projects</span>
+            <div className="h-px bg-gray-700 flex-grow ml-4"></div>
+          </h2>
+        </motion.div>
             
             <div className="grid gap-8 mb-12">
               {featuredProjects.map((project) => (
@@ -169,8 +180,8 @@ const otherProjects = [
             </div>
     
             <h3 className="text-2xl font-bold mb-6 text-gray-300">Other Projects</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
-              <AnimatePresence initial={false}>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 cursor-pointer">
+              <AnimatePresence initial={true}>
                 {otherProjects.slice(0, visibleProjects).map((project, index) => (
                   <motion.div
                     key={project.id}

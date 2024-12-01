@@ -4,9 +4,9 @@ import Link from 'next/link'
 import { useState } from 'react'
 
 const NavLink = ({ href, children }) => (
-  <Link href={href} className="group relative px-3 py-2 text-sm font-medium text-gray-300 transition-colors hover:text-blue-400">
+  <Link href={href} className="group relative px-3 py-2 text-sm font-medium text-gray-300 transition-colors hover:text-blue-300">
     {children}
-    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-400 transform origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-blue-300 transform origin-left scale-x-0 transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
   </Link>
 )
 

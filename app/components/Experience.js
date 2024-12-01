@@ -9,7 +9,6 @@ const experiences = [
     title: 'Data Engineer Intern @ Deloitte',
     date: 'Aug 2024 - Present',
     responsibilities: [
-        'Acquired proficiency in Python and SQL during the internship',
         'Gained hands-on experience with cloud platforms: Azure and AWS',
         'Handled Data Warehousing solutions and tools',
         'Worked with Databricks and PySpark to process and analyze large datasets, improving data pipeline efficiency',

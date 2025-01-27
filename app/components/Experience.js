@@ -6,8 +6,8 @@ const experiences = [
   {
     id: 'deloitte',
     company: 'Deloitte',
-    title: 'Data Engineer Intern @ Deloitte',
-    date: 'Aug 2024 - Present',
+    title: 'Analyst @ Deloitte',
+    date: 'Jan 2025 - Present',
     responsibilities: [
         'Gained hands-on experience with cloud platforms: Azure and AWS',
         'Handled Data Warehousing solutions and tools',

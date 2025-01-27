@@ -35,7 +35,7 @@ const About = () => {
               className="space-y-6 text-gray-400 leading-relaxed"
             >
               <p>
-              Hello, I&apos;m Subhajoy, a Software and Data Engineer with expertise in full-stack development, data engineering, and machine learning. 
+              Hello, I&apos;m Subhajoy, a Software and Data Analyst with expertise in full-stack development, data engineering, and machine learning. 
               Passionate about creating innovative solutions, 
               I specialize in building scalable applications and leveraging data to drive intelligent decision-making. 
               With experience in technologies like React, Node.js, Python, and AWS, 

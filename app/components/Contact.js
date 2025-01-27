@@ -40,7 +40,7 @@ const Contact = () => {
           <ContactLink href="https://github.com/Subhajoy4831" icon={<Github size={24} />} label="GitHub" />
           <ContactLink href="https://www.linkedin.com/in/subhajoy-ghosh-a62625283/" icon={<Linkedin size={24} />} label="LinkedIn" />
         </div>
-        <div className="text-center">
+        <div className="text-center py-6">
           <motion.button
             onClick={() => setIsModalOpen(true)}
             whileHover={{ scale: 1.05 }}

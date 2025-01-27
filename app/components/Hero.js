@@ -27,7 +27,7 @@ const Hero = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-xl mb-8 text-gray-300"
         >
-          I'm a a Software Engineer and Data Engineer with a passion for full-stack development, data engineering, and machine learning. I specialize in creating intuitive, impactful solutions for complex problems.
+          I'm a a Software Engineer and Data Analyst with a passion for full-stack development, data engineering, and machine learning. I specialize in creating intuitive, impactful solutions for complex problems.
         </motion.p>
         <a href="https://github.com/Subhajoy4831" target="_blank" rel="noopener noreferrer">
         <motion.button
